@@ -1,0 +1,35 @@
+# Archive
+
+## Folders
+
+- birmingham/
+    Paired-end illumina, 8 lanes for each subject.
+    File names: WTCHG_X_Y_Z.fastq.gz, where X = laneID, Y = subjectID, Z = read pair ID (1|2)
+    - phaseI/
+	contains 3 lanes [356244, 356245, 356246]
+	- map.txt
+	read counts and sample numbers for phaseI fastq files
+	- fastq/
+	gzipped fastq files
+    - phaseII/
+	contains 1 lane [364060]
+	- map.txt
+        read counts and sample numbers for phaseI fastq files
+        - fastq/
+        gzipped fastq files
+    - phaseIII/
+	contains 5 lanes [365638, 365639, 365640, 365641, 365642]
+	- map.txt
+        read counts and sample numbers for phaseI fastq files
+        - fastq/
+        gzipped fastq files
+
+- pilot/
+    Paired-end illumina
+    - fastq/
+    Gziped fastq files for pilot data. Originally in 2 groups: 
+	Project_LIT_11226_B01_CUS_WGS.2015-11-12
+	Project_LIT_12491_B01_NAN_WGS.2017-04-24
+    File names: A_B_C_L00X_001.RY.fastq.gz where A = subjectID, B = ?adaptor?, C = ?, X = ?, Y = read pair ID (1|2)
+    - all_fastq.md5
+    Checksum for files in `fastq/`. Check using `md5sum -c all_fastq.md5` from this directory

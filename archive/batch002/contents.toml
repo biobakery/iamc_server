@@ -1,0 +1,21 @@
+# This file is TOML formatted https://github.com/toml-lang/toml
+
+title = "batch002"
+description = "Archive folder for data from 96 subjects across multiple cohorts"
+rootpath = "/iamc/archive/batch002/"
+lane_ids = [356244, 356245, 356246, 364060, 365638, 365639, 365640, 365641, 365642]
+subjects = ["BHM00074","BHM00091","BHM00113","BHM00114","BHM00116","BHM00117","BHM00118","BHM00121","BHM00125","BHM00126","BHM00127","BHM00130","BHM00131","BHM00132","BHM00138","BHM00139","BHM00140","BHM00162","JIA00001","JIA00002","JIA00003","JIA00004","JIA00015","JIA00016","JIA00019","JIA00025","JIA00026","JIA00027","JIA00028","JIA00029","JIA00031","JIA00032","JIA00034","JIA00035","JIA00037","JIA00040","JIA00043","JIA00046","JIA00047","JIA00048","JIA00050","JIA00053","JIA00054","JIA00055","JIA00057","JIA00059","JIA00062","JIA00063","MUS00011","MUS00015","NCL00001","NCL00003","NCL00004","NCL00008","NCL00016","NCL00017","NCL00020","NCL00023","NCL00024","NCL00025","NCL00026","NCL00028","OAS00001","OAS00004","OAS00005","OAS00008","OAS00011","OAS00012","OAS00013","OAS00014","OAS00015","OAS00018","OAS00019","OAS00022","OAS00023","OAS00024","OAS00028","OAS00034","OAS00035","OAS00037","OAS00039","OAS00040","OAS00049","OAS00052","OAS00053","OAS00054","OAS00065","ORA00001","ORA00004","ORA00007","ORA00013","ORA00016","ORA00019","ORA00022","ORA00027","ORA00028"]
+
+
+[folders.fastq]
+    path = "fastq/"
+    description = "8 lanes of gzipped fastq reads from WTCHG"
+[folders.bam]
+    path = "bam/"
+    description = "bam alignment files from WTCHG"
+[folders.bai]
+    path = "bai/"
+    description = "bam indexing files from WTCHG"
+[folders.qc]
+    path = "qc/"
+    description = "qc files from WTCHG"

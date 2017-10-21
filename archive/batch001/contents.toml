@@ -1,0 +1,20 @@
+# This file is TOML formatted https://github.com/toml-lang/toml
+
+title = "batch00`"
+description = "Archive folder for data from 60 subjects from Birmingham RA cohort"
+rootpath = "/iamc/archive/batch001/"
+lane_ids = [406782, 413843, 416540, 416541]
+subjects = ["BHM00003","BHM00005","BHM00007","BHM00009","BHM00011","BHM00012","BHM00013","BHM00014","BHM00017","BHM00018","BHM00020","BHM00024","BHM00025","BHM00026","BHM00027","BHM00028","BHM00032","BHM00033","BHM00034","BHM00035","BHM00036","BHM00039","BHM00040","BHM00041","BHM00042","BHM00051","BHM00061","BHM00063","BHM00064","BHM00065","BHM00066","BHM00069","BHM00070","BHM00071","BHM00072","BHM00073","BHM00076","BHM00077","BHM00078","BHM00079","BHM00080","BHM00081","BHM00084","BHM00085","BHM00086","BHM00087","BHM00088","BHM00090","BHM00092","BHM00093","BHM00094","BHM00095","BHM00098","BHM00099","BHM00100","BHM00101","BHM00103","BHM00108","BHM00109","BHM00110",]
+
+[folders.fastq]
+    path = "fastq/"
+    description = "4 lanes of gzipped fastq reads from WTCHG"
+[folders.bam]
+    path = "bam/"
+    description = "bam alignment files from WTCHG"
+[folders.bai]
+    path = "bai/"
+    description = "bam indexing files from WTCHG"
+[folders.qc]
+    path = "qc/"
+    description = "qc files from WTCHG"

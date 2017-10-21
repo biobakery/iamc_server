@@ -1,0 +1,21 @@
+# This file is TOML formatted https://github.com/toml-lang/toml
+
+title = "pilotNY/ folder"
+description = "Archive folder for data from 24 patients in a pilot cohort out of NY."
+rootpath = "/iamc/archive/pilotNY/"
+
+[folder.fastq]
+    path = "fastq/"
+    description = """
+        Gziped fastq files for pilot data. Originally in 2 groups:\n\n\
+        - Project_LIT_11226_B01_CUS_WGS.2015-11-12\n\
+        - Project_LIT_12491_B01_NAN_WGS.2017-04-24\n\n\
+        File names: A_B_C_L00X_001.RY.fastq.gz where A = subjectID, B = ?adaptor?, C = ?, X = ?, Y = read pair ID (1|2)"""
+
+[folder.kneaddata]
+    path = "kneaddata/"
+    description = "Concatenated reads for each subject were run through kneaddata v0.6.1 using biobakery_workflow v0.2.0"
+
+[files.checksum]
+    path = "all_fastq.md5"
+    description = "Checksum for files in fastq/ folder. Check using `md5sum -c all_fastq.md5` from this directory"

@@ -1,0 +1,8 @@
+# Batch 001 Samples
+
+Data for 96 Shotgun metagenomic sequencing runs in Sept and Oct 2017.
+Subjects are a mix of arthritis diagnoses and healthy controls (see metadata).
+
+## Analyses
+
+biobakery_workflow v0.2.0 was run in May 2017 by Kevin Bonham

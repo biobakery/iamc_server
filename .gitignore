@@ -1,6 +1,1 @@
-*
-!*/
-!README*
-!.gitignore
-!*.md
-!*.toml
+.DS_Store

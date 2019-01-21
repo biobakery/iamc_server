@@ -1,8 +1,0 @@
-# Batch 001 Samples
-
-Data for 60 Shotgun metagenomic sequencing runs in March and April 2017.
-Subjects are a mix of arthritis diagnoses (see metadata).
-
-## Analyses
-
-biobakery_workflow v0.1.0 was run in May 2017 by Bahar Sayoldin

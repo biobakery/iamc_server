@@ -2,7 +2,7 @@
 
 ## IAMC files and directories
 1. `README`: table of contents with project numbers and dataset info.
-2. `directories.toml`: machine-readable documentation of directory contents
+2. `data.toml`: machine-readable documentation of directory contents
 1. `analysis_all/`: folder containing
 
 ## Procedures

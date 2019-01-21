@@ -42,8 +42,7 @@ Here's what the structure is supposed to be:
 │   ├── main
 │   └── merged
 ├── strainphlan
-│   ├── main
-│   └── merged
+│   └── markers
 ```
 
 NOTE: The files in `merged/` subfolders are produced without batch identifiers.

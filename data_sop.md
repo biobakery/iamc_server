@@ -15,13 +15,47 @@
 4. Nick will also notify Brian/Kelsey/Kevin that sequences are ready for analysis,
   and will forward the WTCHG email with download details.
 
+#### Make Mapping File
+
+filename            | lane_id | seq_id | sample_id | Count   | batch
+--------------------|---------|--------|-----------|---------|------
+WTCHG_356244_201191 | 356244  | 201191 | BHM00040  | 7521478 | 1
+WTCHG_356244_201191 | 356244  | 201191 | BHM00040  | 7521478 | 1
+
+Mapping files provide information about the raw files sent from the WTCHG.
+In the e-mail containing the download link,
+they will also list this information as follows:
+
+```
+WTCHG_503466_201106 Sample:NCL00173 Count:3314152
+
+WTCHG_503466_202118 Sample:NCL00176 Count:3420996
+
+WTCHG_503466_203130 Sample:NCL00172 Count:3946749
+
+WTCHG_503466_204142 Sample:LRA00006 Count:676284
+```
+
+To generate the table, this can be copy/pasted into a text file,
+and converted to a `tsv` using `sed`:
+
+```sh
+$ sed -r $'s/^(WTCHG_([0-9]+)_([0-9]+)) Sample:([A-Z0-9]+) Count:([0-9]+)/\\1\t\\2\t\\3\t\\4\t\\5\t5/' email.txt > batchXXX_map.tsv
+```
+
+Then append this to the `mapping_master.tsv`
+
+```sh
+$ cat batchXXX_map.tsv >> mapping_master.tsv
+```
+
 #### Downloading Initial lane(s) for a given batch
 
 ##### Step1: Download Files
 
 Download files from ftp.
 The WTCHG will provide an ftp link that contains authentication,
-so you can simple do `$ wget {link} ./`.
+so you can simply do `$ wget {link} ./`.
 This download should contain:
 
 1. compressed fastq files for each sample/lane (with extension `.fastq.gz`),
